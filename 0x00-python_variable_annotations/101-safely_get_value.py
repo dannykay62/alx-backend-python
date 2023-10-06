@@ -13,4 +13,3 @@ def safely_get_value(
         return dct[key]
     else:
         return default
-    
