@@ -10,6 +10,7 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
-        return the list of all the delays (float values) without using sort()
+        return the list of all the delays (float values) without using sort
     """
-    c_routines = [waiit_random]
+    c_routines = [wait_random(max_delay) for _ in range(n)]
+    return [await delay for delay in asyncio.as_completed(c_routines)]
