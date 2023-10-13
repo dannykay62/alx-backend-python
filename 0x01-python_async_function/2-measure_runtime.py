@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    measures the total execution time for 
+    measures the total execution time for
 """
 import asyncio
 import time
