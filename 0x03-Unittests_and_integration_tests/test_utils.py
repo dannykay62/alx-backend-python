@@ -14,7 +14,6 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
         ({"a": {"b": 2}}, ("a", "b"), 2),
     ])
-
     def test_access_nested_map(self, nested_map, path, answer):
         """ test that the method returns what it is supposed to"""
         self.assertEqual(access_nested_map(nested_map, path), answer)
@@ -57,7 +56,7 @@ class TestMemoize(unittest.TestCase):
             def a_method(self):
                 """a method"""
                 return 42
-            
+
             @memoize
             def a_property(self):
                 """a property"""
