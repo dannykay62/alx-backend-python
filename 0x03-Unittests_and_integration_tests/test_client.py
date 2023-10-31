@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""implement the test_org method"""
 """Parametrize, mock property, patch decorator, Integration test, fixtures"""
 import unittest
 from unittest.mock import patch, PropertyMock, Mock
