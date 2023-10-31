@@ -31,7 +31,8 @@ class TestAccessNestedMap(unittest.TestCase):
 
 
 class TestGetJson(unittest.TestCase):
-    """TESTCASE"""
+    """TESTCASE - implement the TestGetJson.test_get_json method to test that
+        utils.get_json returns the expected result"""
     """test the function for the inputs below"""
     @parameterized.expand([
         ("http://example.com", {"paylod": True}),
